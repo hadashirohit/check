@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Biker's Arena</title>
+    <link rel="shortcut icon" type="x-icon" href="icon/Arena Logo.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,600;1,300&display=swap'); </style>
+    <link rel="stylesheet" href="css/creditcard.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark  navbar-scrolled">
+
+            <div class="container-fluid">
+              <a href="index.html"> <img src="icon/Arena Logo.png" alt="" width="45px height=28px"></a>
+              <a class="navbar-brand" href="index.html">
+                <h3><i>Biker's Arena</i></h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><img src="icon/home.png" height="20px" width="20px" alt=""> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="jacket.html" >Jackets</a></li>
+                          <li><a class="dropdown-item" href="gloves.html">Gloves</a></li>
+                          <li><a class="dropdown-item" href="luggage.html">Luggage</a></li>
+                          <li><a class="dropdown-item" href="pants.html">Pants</a></li>
+                          <li><a class="dropdown-item" href="kneegaurd.html">Knee gaurd</a></li>
+                          <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                          <li><a class="dropdown-item" href="baselayer.html">Base Layers</a></li>
+                        </ul>
+                      </li>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">  <img src="icon/login-icon.png" width="20px" height="20px" alt="">
+                          Log In
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="UserLogIn.html">User Log in</a></li>
+                          <li><a class="dropdown-item" href="AdminLogIn.html">Admin Log in</a></li>
+                        </ul>
+                      </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="icon/cart.png" width="20px" height="20px" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="h">
+        <h1>Payment</h1>
+        <span>Pay for placed order</span>
+        <hr>
+      </div>
+      <main>
+        <div class="container">
+
+            <div class="card-container">
+        
+                <div class="front">
+                    <div class="image">
+                        <img src="icon/chip.png" alt="">
+                        <img src="icon/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">################</div>
+                    <div class="flexbox">
+                        <div class="box">
+                            <span>card holder</span>
+                            <div class="card-holder-name">full name</div>
+                        </div>
+                        <div class="box">
+                            <span>expires</span>
+                            <div class="expiration">
+                                <span class="exp-month">mm</span>
+                                <span class="exp-year">yy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="back">
+                    <div class="stripe"></div>
+                    <div class="box">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                        <img src="icon/visa.png" alt="">
+                    </div>
+                </div>
+        
+            </div>
+        
+            <form action="">
+                <div class="inputBox">
+                    <span>card number</span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                    <span>card holder</span>
+                    <input type="text" class="card-holder-input">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>expiration mm</span>
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled>month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>expiration yy</span>
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled>year</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>cvv</span>
+                        <input type="text" maxlength="4" class="cvv-input">
+                    </div>
+                </div>
+                <input type="submit" value="PAY NOW" class="submit-btn">
+            </form>
+        
+        </div>    
+            
+        
+        
+        
+        
+        
+        <script>
+        
+        document.querySelector('.card-number-input').oninput = () =>{
+            document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+        }
+        
+        document.querySelector('.card-holder-input').oninput = () =>{
+            document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+        }
+        
+        document.querySelector('.month-input').oninput = () =>{
+            document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+        }
+        
+        document.querySelector('.year-input').oninput = () =>{
+            document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+        }
+        
+        document.querySelector('.cvv-input').onmouseenter = () =>{
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+        }
+        
+        document.querySelector('.cvv-input').onmouseleave = () =>{
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+        }
+        
+        document.querySelector('.cvv-input').oninput = () =>{
+            document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+        }
+        
+        </script>
+      </main>
+
+      <footer>
+        <hr>
+        <img src="home-pic/footer.jpg" alt="" height="200vh" width="100%">
+        <div class="footer">
+       <div class="conatiner3">
+        <div class="row">
+            <div class="footer-col">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="#">Protection Gear</a></li>
+                    <li><a href="baselayer.html">Performance layers</a></li>
+                    <li><a href="luggage.html">Luggage</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Refund / Exchange Policy</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>Contact Number: 9999999999</p>
+                <p>Mon-Fri 11.00 AM to 4.30 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" id="c1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/login" id="c2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" id="c3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rohit-hadashi-b22365255/" id="c4"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    </footer>
+</body>
+</html>
